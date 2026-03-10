@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-image: linear-gradient(to right, #ffb3b3, #ff6666, #ff8080);
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a237e;
+    letter-spacing: 1px;
+}
+
+/* Bike Sections */
+section {
+    background: #ffffff;
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+section h2 {
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+section img {
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+section img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.1);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #ff5252, #448aff);
+    margin: 35px 0;
+}
+
+/* Form Heading */
+h2 {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    color: #283593;
+}
+
+/* Form */
+form {
+    background: linear-gradient(135deg, #ffffff, #f1f8ff);
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.01);
+}
+
+label {
+    font-weight: bold;
+    color: #37474f;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #b0bec5;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #2962ff;
+    box-shadow: 0 0 6px rgba(41, 98, 255, 0.4);
+    outline: none;
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 12px 24px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #43a047, #66bb6a);
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #2e7d32, #43a047);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+input[type="reset"] {
+    background: linear-gradient(135deg, #e53935, #ef5350);
+    color: white;
+    margin-left: 12px;
+}
+
+input[type="reset"]:hover {
+    background: linear-gradient(135deg, #b71c1c, #e53935);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section, form {
+        padding: 18px;
+    }
+
+    section img {
+        width: 100%;
+    }
+}

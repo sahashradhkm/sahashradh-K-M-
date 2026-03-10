@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikes Showcase</title>
+    <link rel="stylesheet" href="Experiment 02.css">
+</head>
+<body>
+
+    <h1>Popular Adventure & Sport Bikes</h1>
+
+    <!-- KTM -->
+    <section>
+        <h2>KTM</h2>
+        <p>
+            KTM bikes are known for their aggressive design, lightweight build, and high performance.
+            They are popular among young riders and racing enthusiasts for their speed and sharp handling.
+        </p>
+       <img src="img/ktm.jpg" alt="KTM Bike" width="300">
+    </section>
+
+    <hr>
+
+    <!-- BMW -->
+    <section>
+        <h2>BMW</h2>
+        <p>
+            BMW motorcycles are famous for premium quality, comfort, and advanced technology.
+            They are ideal for long-distance touring and riders who prefer a smooth and powerful ride.
+        </p>
+        <img src="img/bmw.jpg" alt="BMW Bike" width="300">
+    </section>
+
+    <hr>
+
+    <!-- Royal Enfield Himalayan -->
+    <section>
+        <h2>Royal Enfield Himalayan</h2>
+        <p>
+            The Royal Enfield Himalayan is built for adventure and off-road riding.
+            It is strong, reliable, and perfect for rough terrains and long journeys.
+        </p>
+        <img src="img/himalayan.jpg" alt="Royal Enfield Himalayan" width="300">
+    </section>
+
+    <hr>
+
+    <!-- Form -->
+    <h2>Your Details</h2>
+    <form>
+        <!-- Personal Information -->
+        <label>First Name:</label><br>
+        <input type="text" name="firstName" required><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="lastName" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" min="1" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="others"> Others<br><br>
+
+        <!-- Bike Choice -->
+        <label>Which bike do you like?</label><br>
+        <input type="radio" name="bike" value="ktm"> KTM<br>
+        <input type="radio" name="bike" value="bmw"> BMW<br>
+        <input type="radio" name="bike" value="royal_enfield"> Royal Enfield Himalayan<br>
+        <input type="radio" name="bike" value="others"> Others<br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>

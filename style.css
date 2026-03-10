@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    background-image: linear-gradient(to right, #66d9ff, #9999ff, #05577a);
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* Main box for all links */
+nav {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+nav h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Horizontal line */
+nav hr {
+    margin-bottom: 20px;
+    border: none;
+    height: 2px;
+    background: #ddd;
+}
+
+/* Link boxes */
+nav a,
+body > a {
+    display: block;
+    margin: 12px 0;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #42a5f5, #478ed1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover,
+body > a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+}
+
+/* Text before links */
+nav {
+    line-height: 1.8;
+}
+
+/* Bike link spacing */
+body > a {
+    max-width: 600px;
+    margin: 20px auto;
+}

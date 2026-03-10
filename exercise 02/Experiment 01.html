@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Working Profile</title>
+    </head>
+    <body>
+<h3>Food:</h3>
+<p>Veg biryani, samosas, and dosas are three of the most popular and culturally significant dishes in Indian cuisine, each offering a unique taste, texture, and history.
+    Veg biryani is a flavorful and aromatic main course rice dish, often considered a celebration meal. 
+    Samosas are savory pastries that serve as popular snacks or appetizers, known for their crispy exterior and spiced filling.
+    Dosas are thin, crispy pancakes that are a staple breakfast item in South India, cherished for their versatility and light texture.
+</p>
+To learn more about me <a href="about.html">click here</a><br>
+        <hr>
+        <aside>
+            <details>
+                <summary> Guess what is my favourite food?</summary>
+                <p>My favourite food is Veg Biriyani</p>
+            </details>
+        </aside>
+        <hr>
+        <h1>Below are the images of my favourite food.</h1>
+        <img src="img/veg biriyani.jpg" alt="veg biriyani image" title="veg biriyani is very delicious" height="300" width="300"><br>
+        <figcaption>
+            <b>most favourite dish veg biriyani</b>
+            </figcaption>
+            <br>
+        <img src="img/samosa.jpg" alt="samosa image" title="samosa is very much tasty" height="300" width="300"><br>
+        <figcaption>
+            <b>most favourite dish samosa</b>
+            </figcaption>
+            <br>
+        <img src="img/dosa.jpg" alt="dosa image" title="dosa is very tasty" height="300" width="300">
+        <figcaption>
+            <b>most favourite dish dosa</b>
+            </figcaption>
+            <br>
+            <hr>
+            <h3>Drinks:</h3>
+            <p>
+Coca Cola, Sprite, and Fanta are three popular carbonated soft drinks, each with its own unique flavor profile and brand identity.
+ Coca Cola is known for its classic cola taste with a blend of caramel and vanilla notes, making it a timeless favorite worldwide. 
+ Sprite offers a refreshing lemon-lime flavor that is crisp and invigorating, often enjoyed as a thirst-quencher. 
+ Fanta is recognized for its fruity and vibrant flavors, with orange being the most iconic, providing a sweet and tangy experience that appeals to those looking for a burst of fruitiness in their beverage.
+            </p>
+            <summary> Guess what is my favourite drink?</summary>
+                <p>My favourite drink is Coca Cola</p>
+            </details>
+        </aside>
+        <hr>
+        <h1>Below are the images of my favourite drinks.</h1>
+        <img src="img/coca cola.jpg" alt="coca cola image" title="coca cola is very delicious" height="300" width="300"><br>
+        <figcaption>
+            <b>most favourite drink coca cola</b>
+            </figcaption>
+            <br>
+        <img src="img/sprite.jpg" alt="sprite image" title="sprite is very much tasty" height="300" width="300"><br>
+        <figcaption>
+            <b>most favourite drink sprite</b>
+            </figcaption>
+            <br>
+        <img src="img/fanta.jpg" alt="fanta image" title="fanta is very tasty" height="300" width="300">
+        <figcaption>
+            <b>most favourite drink fanta</b>
+            </figcaption>
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I would really like to hear from you.</p>
+            <form action="http://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                <p>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="sandeep" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                <label for="LastName">Last Name:</label>
+                <input type="text" name="LastName" id="LastName" placeholder="seervi" autocomplete="on" required>
+                </p>
+                <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="your secret" required>
+                </p>
+                <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your favourite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="veg biriyani" value="veg biriyani">
+                        <label for="veg biriyani">Veg Biriyani</label>
+                    </p>
+                     <p>
+                        <input type="radio" name="food" id="samosa" value="samosa">
+                        <label for="samosa">Samosa</label>
+                    </p>
+                     <p>
+                        <input type="radio" name="food" id="dosa" value="dosa">
+                        <label for="dosa">Dosa</label>
+                    </p>
+                     <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>What is your favourite drink?</legend>
+                    <p>
+                        <input type="checkbox" name="drinks" id="coca cola" value="coca cola">
+                        <label for="coca cola">Coca Cola</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="drinks" id="sprite" value="sprite">
+                        <label for="sprite">Sprite</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="drinks" id="fanta" value="fanta">
+                        <label for="fanta">Fanta</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="drinks" id="otherdrinks" value="otherdrinks">
+                        <label for="otherdrinks">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send Me A Note</legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" rows="10" cols="30" placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="http://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+        <hr>
+        &lt;&lt;&lt; &copy; <a href="index.html">About Me</a> &gt;&gt;&gt;
+    </body>
+</html>

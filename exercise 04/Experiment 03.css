@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.id-card {
+  width: 300px;
+  background: white;
+  border: 2px solid #004aad;
+  border-radius: 8px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+/* Top section */
+.top {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.top h2 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.sub {
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.student {
+  display: inline-block;
+  margin-top: 5px;
+  background: white;
+  color: #004aad;
+  padding: 3px 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Details */
+.details {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.details p {
+  margin: 6px 0;
+}
+
+/* Bottom section */
+.bottom {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.bottom img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+.year {
+  margin-left: 10px;
+  background: #ff3b3b;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  writing-mode: vertical-rl;
+}

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #1e1e2f, #121212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    background: #000;
+    padding: 25px;
+    border-radius: 35px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+}
+
+/* DISPLAY */
+#display {
+    width: 100%;
+    height: 70px;
+    font-size: 32px;
+    text-align: right;
+    border: none;
+    border-radius: 15px;
+    padding-right: 15px;
+    background: #2c2c2c;
+    color: #ffffff;   /* Bright white text */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* BUTTON GRID */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* GENERAL BUTTON STYLE */
+button {
+    height: 65px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #ffffff; /* Bright white numbers */
+}
+
+/* NUMBER BUTTONS */
+button:not(.operator):not(.equal):not(.clear) {
+    background: #444;
+}
+
+button:not(.operator):not(.equal):not(.clear):hover {
+    background: #555;
+}
+
+/* OPERATOR BUTTONS */
+.operator {
+    background: #ff9500;
+    color: white;
+}
+
+.operator:hover {
+    background: #ffa733;
+}
+
+/* EQUAL BUTTON */
+.equal {
+    background: #00c853;
+    color: white;
+}
+
+.equal:hover {
+    background: #00e676;
+}
+
+/* CLEAR BUTTON */
+.clear {
+    background: #d32f2f;
+}
+
+.clear:hover {
+    background: #f44336;
+}
+
+/* ZERO BUTTON */
+.zero {
+    grid-column: span 2;
+    border-radius: 35px;
+}
