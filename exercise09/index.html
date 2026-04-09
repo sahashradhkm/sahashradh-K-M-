@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 09 - Data Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📊 Data Manager</h1>
+            <p>Manage your data efficiently with automatic database storage</p>
+        </header>
+
+        <!-- Form Section -->
+        <div class="main-content">
+            <section class="form-section">
+                <h2>Add New Entry</h2>
+                <form id="dataForm" class="form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Position/Title *</label>
+                        <input type="text" id="position" name="position" required placeholder="e.g., Developer, Designer">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <input type="text" id="skills" name="skills" placeholder="e.g., HTML, CSS, JavaScript">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Additional information..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">✓ Submit</button>
+                </form>
+
+                <!-- Info Box -->
+                <div class="info-box">
+                    <p><strong>Total Records:</strong> <span id="totalRecords">0</span></p>
+                    <p id="lastUpdated" style="font-size: 0.9em; color: #666;"></p>
+                </div>
+            </section>
+
+            <!-- Data Section -->
+            <section class="data-section">
+                <div class="section-header">
+                    <h2>Stored Data</h2>
+                    <div class="button-group">
+                        <button id="downloadBtn" class="btn btn-secondary">📥 Download CSV</button>
+                        <button id="copyBtn" class="btn btn-secondary">📋 Copy Data</button>
+                        <button id="clearBtn" class="btn btn-danger">🗑️ Clear All</button>
+                    </div>
+                </div>
+
+                <!-- Data Table -->
+                <div class="table-wrapper">
+                    <table id="dataTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Position</th>
+                                <th>Skills</th>
+                                <th>Notes</th>
+                                <th>Submitted</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr class="empty-row">
+                                <td colspan="8">No data yet. Submit the form to get started!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

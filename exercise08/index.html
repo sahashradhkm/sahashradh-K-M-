@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 8 - Submission Proofs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.5);
+            --accent: #3b82f6;
+            --text: #f8fafc;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container { max-width: 1000px; width: 100%; }
+        h1 { text-align: center; margin-bottom: 10px; color: var(--accent); }
+        p.desc { text-align: center; color: #94a3b8; margin-bottom: 40px; }
+        
+        .ss-section {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .ss-section h2 { font-size: 1.2rem; margin-bottom: 15px; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 15px; }
+        
+        .ss-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .ss-placeholder {
+            width: 100%;
+            min-height: 250px;
+            background: rgba(0,0,0,0.3);
+            border: 2px dashed #334155;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .ss-placeholder img {
+            max-width: 100%;
+            display: block;
+            z-index: 2;
+        }
+        .ss-placeholder::after {
+            content: attr(data-label);
+            color: #475569;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+        /* Hidden text when image is present */
+        .ss-placeholder:has(img)::after { display: none; }
+
+        .footer { text-align: center; margin-top: 50px; color: #475569; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Experiment 8: PHP Fundamentals</h1>
+        <p class="desc">Official submission proofs of all completed PHP basic exercises.</p>
+
+        <!-- Exercise 1 -->
+        <div class="ss-section">
+            <h2>Exercise 1: PHP Environment Verification (1 SS)</h2>
+            <div class="ss-grid">
+                <div class="ss-placeholder" data-label="ex1_ss1.png">
+                    <img src="images/1_ss_ex1.png" alt="Exercise 1 Screenshot">
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 2 -->
+        <div class="ss-section">
+            <h2>Exercise 2: Built-in Server & Routing (2 SS)</h2>
+            <div class="ss-grid">
+                <div class="ss-placeholder" data-label="ex2_ss1.png">
+                    <img src="images/1_ss_ex2.png" alt="Server Index">
+                </div>
+                <div class="ss-placeholder" data-label="ex2_ss2.png">
+                    <img src="images/2_ss_ex2.png" alt="Server About">
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 3 -->
+        <div class="ss-section">
+            <h2>Exercise 3: PHP Basics (3 SS)</h2>
+            <div class="ss-grid">
+                <div class="ss-placeholder" data-label="ex3_ss1.png">
+                    <img src="images/1_ss_ex3.png" alt="Profile Logic">
+                </div>
+                <div class="ss-placeholder" data-label="ex3_ss2.png">
+                    <img src="images/2_ss_ex3.png" alt="Constants Demo">
+                </div>
+                <div class="ss-placeholder" data-label="ex3_ss3.png">
+                    <img src="images/3_ss_ex3.png" alt="Data Types Logic">
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Challenge -->
+        <div class="ss-section">
+            <h2>Final Challenge: System Dashboard (1 SS)</h2>
+            <div class="ss-grid">
+                <div class="ss-placeholder" data-label="challenge_ss1.png">
+                    <img src="images/1_ss_challenge.png" alt="System Info Challenge">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Krishu's Coddy Zone | Experiment 8 Documentation
+        </div>
+    </div>
+</body>
+</html>

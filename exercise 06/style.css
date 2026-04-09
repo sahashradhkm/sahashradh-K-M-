@@ -1,130 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+    --primary: #1a472a;
+    --secondary: #2d7a4a;
+    --accent: #4fb584;
+    --light-bg: #f0f8f4;
+    --card-bg: #ffffff;
+    --text-dark: #1a1a1a;
+    --text-light: #666666;
+    --border-color: #d4e5dd;
+    --success: #27ae60;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 /* Background */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
 }
 
-/* Main Container */
-.container {
-    background: #ffffff;
-    padding: 40px;
-    width: 800px;
-    border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 40px 20px;
     text-align: center;
-    animation: fadeIn 0.6s ease-in-out;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
 }
 
-/* Title */
-h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
-    color: #333;
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-/* Form Layout */
+.header p {
+    font-size: 16px;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+/* Main Wrapper */
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Form Section */
+.form-section {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--accent);
+    transition: transform 0.3s ease;
+}
+
+.form-section:hover {
+    transform: translateY(-5px);
+}
+
+.form-section h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Results Section */
+.results-section {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--secondary);
+}
+
+.results-section h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Form Styles */
 form {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
 }
 
-/* Input Fields */
-form input {
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+form input,
+form select,
+form textarea {
     padding: 12px 15px;
-    width: 200px;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
-    border: 2px solid #ddd;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
     outline: none;
-    transition: 0.3s;
-    font-size: 14px;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(79, 181, 132, 0.1);
+    background-color: #fafffe;
 }
 
-form input:focus {
-    border-color: #667eea;
-    box-shadow: 0 0 10px rgba(102,126,234,0.4);
-}
-
-/* Buttons Common */
-button {
-    padding: 12px 20px;
+/* Fieldset */
+fieldset {
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-    font-size: 14px;
+    padding: 15px;
+    background: var(--light-bg);
 }
 
-/* Add Data Button */
+fieldset legend {
+    padding: 0 10px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 15px 8px 0;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+fieldset input {
+    width: auto;
+    margin: 0;
+}
+
+/* Button Styles */
+button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
 form button {
-    background: linear-gradient(135deg, #43e97b, #38f9d7);
-    color: #fff;
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+    color: white;
 }
 
 form button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(45, 122, 74, 0.3);
 }
 
-/* Bottom Buttons Section */
-.buttons {
-    margin-top: 30px;
+form button:active {
+    transform: translateY(0);
+}
+
+/* Output Section */
+#output-div {
+    min-height: 300px;
+    background: var(--light-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--text-light);
+    padding: 60px 20px;
+    font-style: italic;
+}
+
+#output-div h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
+}
+
+#output-div ul {
+    list-style: none;
+    padding: 0;
+}
+
+#output-div li {
+    padding: 10px 15px;
+    background: white;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border-left: 3px solid var(--accent);
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Action Buttons */
-.buttons button {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
+#output-div strong {
+    color: var(--secondary);
 }
 
-.buttons button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-}
-
-/* Table Styling */
-table {
-    margin: 30px auto;
+/* Data Table */
+.data-table {
     width: 100%;
+    margin-top: 20px;
     border-collapse: collapse;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
-th {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+.data-table thead {
+    background: var(--primary);
     color: white;
-    padding: 15px;
 }
 
-td {
-    padding: 12px;
-    background: #f9f9f9;
+.data-table th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-tr:nth-child(even) td {
-    background: #ececec;
+.data-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+    background: white;
 }
 
-tr:hover td {
-    background: #dfe6ff;
-    transition: 0.3s;
+.data-table tbody tr:hover {
+    background: var(--light-bg);
+    transition: background 0.2s ease;
 }
 
-/* Smooth Animation */
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+.data-table tbody tr:nth-child(even) {
+    background: rgba(240, 248, 244, 0.5);
+}
+
+/* Footer */
+.footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-section,
+.results-section {
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .form-section,
+    .results-section {
+        padding: 20px;
+    }
+
+    fieldset label {
+        display: block;
+        margin: 10px 0;
+    }
 }

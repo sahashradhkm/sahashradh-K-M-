@@ -3,30 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>All Exercises - Index</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        nav {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        nav h1 {
+            color: #0d4a3d;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        hr {
+            border: none;
+            border-top: 3px solid #0d4a3d;
+            margin: 30px 0;
+        }
+        li {
+            list-style: none;
+            padding: 18px 20px;
+            margin: 12px 0;
+            background: #f8f9fa;
+            border-left: 6px solid #2ecc71;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+        li:hover {
+            background: #f0f4ff;
+            box-shadow: 0 5px 15px rgba(13, 74, 61, 0.2);
+            transform: translateX(5px);
+        }
+        li a {
+            background: linear-gradient(135deg, #0d4a3d 0%, #1a6b52 100%);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        li a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(13, 74, 61, 0.4);
+        }
+        .exercise-title {
+            font-weight: 700;
+            color: #0d4a3d;
+            font-size: 1.15em;
+            flex: 1;
+        }
+        .exercise-desc {
+            font-size: 0.85em;
+            color: #666;
+            margin-left: 10px;
+            font-weight: 400;
+        }
+    </style>
 </head>
 <body>
     <nav>
-    <h1>Links for all projects which i have done</h1>
-    <hr>
-    <li>Exercise 01<a href="exercise 01/index.html">Click Here</li></a>
-    <br>
-    <br>
-    <li>Exercise 02 <a href="exercise 02/Experiment 01.html">Click Here</li></a>
-    <br>
-    <br>
-    <li>Exercise 03 <a href="exercise 03/Experiment 02.html">Click Here</li></a>
-    <br>
-    <br>
-    <li>Exercise 04 <a href="exercise 04/Experiment 03.html">Click Here</li></a>
-    <br>
-    <br>
-    <li>Exercise 05 <a href="exercise 05/Experiment 06(01).html">Click Here</a></li>
-    <br>
-    <br>
-    <li>Exercise 06 <a href="exercise 06/input.html">Click Here</a>  <a href="exercise 06/output.html">Click Here</a></li>
-    <br>
+        <h1>📚 All Exercises</h1>
+        <hr>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 01</span>
+            </div>
+            <a href="exercise 01/index.html">View</a>
+        </li>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 02</span>
+            </div>
+            <a href="exercise 02/Experiment 01.html">View</a>
+        </li>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 03</span>
+            </div>
+            <a href="exercise 03/Experiment 02.html">View</a>
+        </li>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 04</span>
+            </div>
+            <a href="exercise 04/Experiment 03.html">View</a>
+        </li>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 05</span>
+            </div>
+            <a href="exercise 05/Experiment 06(01).html">View</a>
+        </li>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 06</span>
+                <span class="exercise-desc">Redesigned with green theme</span>
+            </div>
+            <div>
+                <a href="exercise 06/index.html">View</a>
+            </div>
+        </li>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 07</span>
+                <span class="exercise-desc">Data Manager with localStorage, CSV export, clipboard copy</span>
+            </div>
+            <a href="exercise 07/index.html">View</a>
+        </li>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 08</span>
+            </div>
+            <a href="exercise08/index.html">View</a>
+        </li>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 09</span>
+                <span class="exercise-desc">Database System (PHP/MySQL) - Form submission with data persistence</span>
+            </div>
+            <a href="exercise09/index.html">View</a>
+        </li>
+        
+        <li>
+            <div>
+                <span class="exercise-title">Exercise 10</span>
+                <span class="exercise-desc">Scientific Calculator (PHP + JavaScript) - Math functions with Fetch API</span>
+            </div>
+            <a href="http://exercise10.rf.gd">View</a>
+        </li>
+        
     </nav>
 </body>
 </html>
